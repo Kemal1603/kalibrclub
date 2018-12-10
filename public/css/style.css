@@ -1,0 +1,685 @@
+/* All */
+
+@font-face {
+    font-family: 'Awesome Font';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Awesome Font'),
+    url('/fonts/trafaret2.woff') format('woff'),
+    url('/fonts/trafaret2.TTF') format('ttf'),
+    url('/fonts/trafaret2.eot') format('eot');
+}
+
+html, body {
+    max-width: 1900px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+a {
+    color: #ff0005;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+    color: #ac0005;
+    text-decoration: none;
+}
+
+.scroll-box {
+    padding-top: 30px;
+}
+
+.text-red{
+    color: #ff0005;
+}
+
+.red {
+    background-color: #ff0005 !important;
+}
+
+.red:hover {
+    background-color: #ce0005 !important;
+}
+
+.scroll-down {
+
+    color: #ff0005 !important;
+    text-decoration: none !important;
+    font-size: 25px;
+    font-family: 'Awesome Font', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.scroll-down:hover {
+    color: #c80005 !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #000000;
+    border: 0;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1d1d1d;
+}
+
+.btn-primary:active {
+    background-color: #404040 !important;
+}
+
+.btn-default {
+    background-color: #FFFFFF;
+
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.btn-default:hover {
+    background-color: #c0c0c0;
+}
+
+.btn-default:active {
+    background-color: rgb(0, 178, 255) !important;
+}
+
+.navbar-toggle {
+    width: 100%;
+    margin: 0;
+    border: none;
+    color: #FFFFFF;
+}
+
+h1, h2 {
+    font-family: 'Awesome Font', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Navigation */
+
+.navbar-default {
+    background-color: rgba(0, 0, 0, 0.88);
+    border: none;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+
+@media only screen  and (min-width: 1224px) {
+    .navbar-default {
+        background-color: rgba(0, 0, 0, 0.11);
+        border: none;
+        transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+    }
+}
+
+.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.88);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #a9a9a9 !important;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff !important;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Awesome Font', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #a9a9a9 !important;
+}
+
+.dropdown-menu>li>a{
+    background: rgba(0, 0, 0, 0.72);
+    color: #ffffff;
+    padding: 10px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu>li>a:hover{
+    background: rgba(73, 73, 73, 0.72);
+    color: #ffffff;
+}
+
+.dropdown-menu{
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.phone-area {
+    padding-top: 16px;
+}
+
+.phone-area a {
+    color: #ff0005;
+    display: block;
+    font-size: 17px;
+    font-family: 'Awesome Font', "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Section: start */
+#start {
+    min-height: 100vh;
+    background: url("../img/start-background-3.jpg") no-repeat center;
+    background-size: cover;
+}
+
+@media only screen  and (min-width: 1224px) {
+    #start {
+        min-height: 100vh;
+    }
+}
+
+#start h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+#start h3 {
+    color: #efefef;
+    font-size: 18px;
+}
+
+.edge {
+    transform: skewX(30deg);
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    margin: 20px 40px;
+    border-left: 3px solid #ff0005;
+}
+
+#start h2 {
+    margin: 0 0 0 50px;
+    padding: 0;
+
+    transform: skewX(-30deg);
+    color: #0b0b0b;
+    font-size: 20px;
+}
+
+#start .form-container {
+    margin-top: 8%;
+}
+
+.top-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width: 1224px) {
+    .top-box {
+        min-height: 100vh;
+    }
+}
+
+.sale-title{
+    text-align: center;
+}
+
+@media only screen  and (min-width: 1224px) {
+    .sale-title{
+        text-align: right;
+
+    }
+
+}
+
+/* ---------------------- Page Airsoft -----------------------*/
+#airsoft {
+    overflow: hidden;
+    position: relative;
+    color: #FFFFFF;
+    padding: 40px 0;
+    background: url("../img/airsoft-background.jpg") top;
+    background-size: cover;
+}
+
+#airsoft .links{
+    font-size: 16px;
+}
+
+#airsoft p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#airsoft h1 {
+    margin-bottom: 30px;
+}
+
+#airsoft .slick-box {
+    z-index: -1;
+}
+
+#airsoft .links a {
+    margin: 10px;
+}
+
+#airsoft .right-container {
+    padding-top: 30px;
+}
+
+
+/* ---------------------- Page Airsoft -----------------------*/
+#playgrounds {
+    color: #FFFFFF;
+    padding: 30px 0;
+    background-color: #000000;
+    background-size: cover;
+}
+
+#playgrounds .images {
+    display: flex;
+}
+
+#playgrounds .images .box {
+    margin-right: 5px;
+}
+
+#playgrounds .images .box:last-child {
+    margin-right: 0;
+}
+
+#playgrounds .image img {
+  width: 100%;
+    margin-bottom: 10px;
+}
+
+#playgrounds .btn-primary {
+    background-color: #ff0005;
+}
+
+#playgrounds .btn-primary:hover {
+    background-color: #bb0005;
+}
+
+#playgrounds h2 {
+    color: #ff0005;
+}
+
+#playgrounds h4 {
+    font-size: 16px;
+}
+
+.link-arrow {
+    font-size: 30px;
+    color: #FFFFFF !important;
+}
+
+.link-arrow:hover {
+    font-size: 30px;
+    color: #e2e2e2 !important;
+}
+
+#arrow-left {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#arrow-right {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#arrow-left-2 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#arrow-right-2 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#arrow-left-5 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#arrow-right-5 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#arrow-left-4 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#arrow-right-4 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+#arrow-left-6 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+#arrow-right-6 {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.single-gallery-slide {
+    border: 2px solid #000000;
+    padding: 0;
+}
+
+.single-gallery-slide img {
+
+}
+
+.inner-box {
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.inner-box i {
+    color: #FFFFFF;
+    opacity: 0;
+    font-size: 28px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.single-gallery-slide:hover .inner-box {
+    opacity: 1;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.57);
+}
+
+.single-gallery-slide:hover .inner-box i {
+    opacity: 0.6;
+}
+
+/* ---------------------- Page Prices -----------------------*/
+#prices {
+    padding: 30px 0;
+    background: url("../img/background-price.jpg") center;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+#prices .single-price {
+    padding: 10px;
+}
+
+#prices .single-price .btn-primary{
+    background: #ff0005;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#prices .single-price .box {
+    border: 1px solid #0b0b0b;
+    background-color: #FFFFFF;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#prices .single-price .box:hover {
+    box-shadow: #0b0b0b 0 0 10px;
+}
+
+#prices .single-price .box h2 {
+    font-size: 24px;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px 0;
+    padding-top: 3px;
+}
+
+#prices .single-price .box h5 {
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#prices .single-price .box span {
+    color: #ff0005;
+    font-size: 30px;
+}
+
+#prices .single-price .box h4 {
+    padding: 0 10px;
+}
+#prices .wr_quest td{
+    padding-right: 20px;
+    padding-bottom: 8px;
+    }
+/* ---------------------- Page Certificate -----------------------*/
+
+#certificate img{
+    width: 100%;
+    box-sizing: cover;
+}
+#certificate .btn-primary {
+    background: #ff0005;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    margin: 10px 0 20px 0;
+}
+
+#certificate ul{
+    list-style: none;
+}
+@media (max-width: 767px){
+	.text-certificate{font-size: 10px;}
+}
+
+/* ---------------------- Page Archery Tag -----------------------*/
+#archery-tag {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+#archery-tag iframe {
+    width: 100%;
+    height: 400px;
+
+}
+
+/* ---------------------- Playgrounds -----------------------*/
+.playground {
+    background: url("../img/playgrounds.jpg") no-repeat center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
+
+.playground .single-gallery-slide {
+    margin-bottom: 20px;
+}
+
+.playground h2 {
+    margin-bottom: 40px;
+}
+
+
+#komarovo .popup-gallery h2 {
+    padding: 0;
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+/*--------------------------- Capture Form -----------------------*/
+
+.capture-form-back {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    display: none;
+}
+
+.capture-form {
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    display: none;
+}
+
+.capture-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.capture-form hr {
+    margin: 5px;
+}
+
+.capture-form form {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.capture-form input {
+    text-align: center;
+    border-radius: 0;
+    background-color: #8a8a8a;
+    color: #FFFFFF;
+}
+
+.capture-form .btn {
+    min-width: 0;
+}
+
+.capture-form .close-capture-form {
+    color: #5a5a5a;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+
+/*--------------------------- Footer -----------------------*/
+footer {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #060606;
+    color: #FFFFFF;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #ff0005;
+}
+
+footer a {
+    display: block;
+    text-decoration: none !important;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+footer .phone {
+    font-family: 'Awesome Font', serif;
+    font-size: 20px;
+
+}
+
+#we_are_happy{
+    background: url("../img/start-background-3.jpg") no-repeat center fixed;
+    background-size: cover;
+
+    padding: 90px 0;
+    color: #FFFFFF;
+}
+
+.call-order-form h1{
+    padding: 200px 0;
+   color: #FFFFFF;
+}
+
+/*--------------------------- Articles -----------------------*/
+.articles{
+    background: url("../img/playgrounds.jpg") no-repeat center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}

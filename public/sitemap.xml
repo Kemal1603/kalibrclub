@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+        <loc>https://kalibrclub.by/</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/paintball/</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/archery_tag/</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/lasertag/</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/articles/general-provisions.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/articles/scripts.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/articles/rules.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/articles/faq.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/drajnia.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/komarovo.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/derevnaja.php</loc>
+    </url>
+    <url>
+        <loc>https://kalibrclub.by/rakov.php</loc>
+    </url>
+</urlset>

@@ -1,0 +1,496 @@
+/* Archery tag styles */
+
+/* Main */
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.btn{
+    border-radius: 90px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-primary{
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    transition: all ease 0.2s;
+    background: #ff0005;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #ff5458;
+}
+
+/* Navigation */
+.navbar-default{
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0 0 10px #bbbbbb;
+}
+
+.navbar-brand{
+    padding: 3px 30px;
+}
+
+.navbar-default .navbar-nav>li>a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #ff0005;
+    text-decoration: underline;
+}
+
+.navbar-default .strong{
+    color: #ff0005 !important;
+    font-weight: 900;
+}
+
+.dropdown-menu>li>a{
+    background: rgba(255, 255, 255, 0.72);
+    color: #000000;
+    padding: 10px 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu>li>a:hover{
+    background: rgba(167, 167, 167, 0.72);
+    color: #000000;
+}
+
+.dropdown-menu{
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.phone-box{
+    background: #ff0005;
+    position: absolute;
+    right: -20px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.phone-box .inner-box{
+    margin-left: 26px;
+    background: url("/img/archery/phone.png")no-repeat left center;
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+
+.phone-box a{
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#logo-box{
+    background: #FFFFFF;
+    position: absolute;
+    left: -20px;
+    width: 300px;
+    text-align: center;
+    padding: 10px 0;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    box-shadow: 0 0 10px #bbbbbb;
+}
+
+#logo-box .inner-box{
+    margin-left: 26px;
+    background: url("/img/archery/phone.png")no-repeat left center;
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+
+/* Start */
+#start{
+    background: url("/img/archery/bg.jpg") no-repeat top;
+    background-size: cover;
+    min-height: 110vh;
+}
+
+#start .info{
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    position: absolute;
+    right: -50px;
+    top: 30%;
+    padding: 20px 120px;
+    box-shadow: 0 0 25px #4e4e4e;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+#start .inner-box{
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+
+#start h1{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#start h4{
+    color: #ff0005;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: right;
+}
+
+#start p{
+    text-align: center;
+}
+
+#start .btn-primary{
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 12px 80px;
+}
+
+#start .about-link{
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#start .about-link i{
+    color: #ff0005;
+}
+
+/* About */
+#about .col-sm-6{
+    padding: 0;
+}
+
+#about h1{
+    color: #ff0005;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#about h1 strong{
+    color: #000000;
+    display: block;
+    font-weight: 800;
+    font-size: 39px;
+}
+
+#about iframe{
+    width: 100%;
+    height: 460px;
+}
+
+#about p{
+    font-size: 16px;
+}
+
+#about .description{
+    padding: 70px;
+}
+
+/* Prices */
+#prices{
+    background: url("/img/archery/prices_bg.jpg") no-repeat center fixed;
+    background-size: cover;
+    padding: 20px 0;
+}
+
+#prices h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ff0005;
+    font-size: 49px;
+}
+
+#prices hr{
+    height: 20px;
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+}
+
+#prices .single-price{
+    padding: 10px;
+}
+
+#prices .single-price .inner-box{
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#prices .single-price .inner-box h3{
+    font-size: 18px;
+}
+
+#prices .single-price .inner-box h4{
+    font-weight: 600;
+}
+
+#prices .single-price .inner-box h5{
+    font-weight: 600;
+}
+
+#prices .single-price .inner-box i{
+    color: #ff0005;
+}
+
+
+#prices .btn-primary{
+    font-size: 18px;
+    padding: 10px 50px;
+    margin: 20px 0;
+}
+
+
+/* Places */
+#places{
+    padding: 30px 0;
+}
+
+#places h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#places .single-map h2{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+#places .single-map h3{
+    margin-top: 3px;
+    font-size: 18px;
+}
+
+#places .single-map h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#places .single-map i{
+    color: #ff0005;
+}
+
+#places .single-map iframe{
+    border: 3px solid #000000;
+}
+
+/*--------------------------- Footer -----------------------*/
+footer {
+    box-shadow: 0 0 5px #000000;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer a{
+    display: block;
+    color: #1a1a1a;
+}
+footer a:hover{
+    color: #474747;
+}
+
+footer i{
+    color: #ff0005;
+}
+
+footer strong{
+    text-transform: uppercase;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+
+footer .phone{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+footer .creator-box{
+    text-align: right;
+}
+
+footer .creator-box a{
+    color: #ff0005;
+    font-weight: 600;
+}
+
+
+/*--------------------------- Capture Form -----------------------*/
+
+.capture-form-back {
+    background: linear-gradient(to right, rgba(255, 0, 5, 0.61), rgba(112, 0, 2, 0.65));
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    display: none;
+}
+
+.capture-form {
+    background-color: #FFFFFF;
+    padding: 20px 20px;
+    display: none;
+    border: 3px solid #ff0005;
+    box-shadow: 0 0 90px #323232;
+}
+
+.capture-form h2{
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #ff0005;
+}
+
+.capture-form h4{
+    font-size: 14px;
+}
+
+.capture-form .btn-primary{
+    padding: 10px 60px;
+}
+
+.capture-form h1{
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.capture-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.capture-form hr {
+    margin: 5px;
+}
+
+.capture-form form {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.capture-form input {
+    text-align: center;
+    border-radius: 0;
+}
+
+.capture-form .btn {
+    min-width: 0;
+}
+
+.close-capture-form {
+    color: #5a5a5a;
+    font-size: 16px;
+    text-decoration: none !important;
+
+}
+
+/* Animation */
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+@media screen and (min-width: 992px){
+    .navbar-default{
+        padding-right: 300px;
+    }
+}
+
+
+@media screen and (max-width: 620px){
+    #start .info{
+        padding: 20px 40px;
+    }
+
+
+    #start h1{
+        font-size: 36px;
+    }
+
+    #start h4{
+        color: #ff0005;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        margin-right: 20px;
+        text-align: right;
+    }
+
+    #about iframe{
+        height: 200px;
+    }
+
+}
