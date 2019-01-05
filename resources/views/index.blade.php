@@ -32,7 +32,7 @@
     <link href="/css/style.css" rel="stylesheet">
 
     <style>
-        #prices .wr_quest td{
+        #prices .wr_quest td {
             padding-right: 20px;
             padding-bottom: 8px;
         }
@@ -129,6 +129,7 @@
                         <li><a class="scroll-link" href="#playgrounds">Площадки</a></li>
                         <li><a class="scroll-link" href="#prices">Цены</a></li>
                         <li><a class="scroll-link" href="#certificate">Сертификаты</a></li>
+                        <li><a class="scroll-link" href="/news">Новости</a></li>
 
 
                         <li class="dropdown">
@@ -199,7 +200,10 @@
 
         <div class="col-sm-8 col-sm-offset-4 right-container">
             <h1 class="text-center">Страйкбол</h1>
-            <p>Страйкбол - это командная игра, в которой стрельба ведётся из точных пневматических копий реального боевого оружия. Игра проводится по заранее согласованному сценарию на открытой территории или в крытом помещении. Цель и задачи игры, время начала и окончания, границы игровой территории определяются сценарием или командами участницами непосредственно перед игрой.
+            <p>Страйкбол - это командная игра, в которой стрельба ведётся из точных пневматических копий реального
+                боевого оружия. Игра проводится по заранее согласованному сценарию на открытой территории или в крытом
+                помещении. Цель и задачи игры, время начала и окончания, границы игровой территории определяются
+                сценарием или командами участницами непосредственно перед игрой.
             </p>
             <p><strong>Сборная игра</strong> – это игра, на которой присутствуют все желающие. На сборной игре вы
                 можете взять все
@@ -224,63 +228,16 @@
 
 
             <div class="popup-gallery">
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/1.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/1.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/3.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/3.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/4.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/4.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/5.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/5.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/6.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/6.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/7.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/7.jpg">
-                </div>
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/9.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/9.jpg">
-                </div>
+                @foreach($album1->photos as $each_photo)
+                    <div class="single-gallery-slide col-md-3 col-sm-4 ">
+                        <a href="/storage/strikeball_img/{{ $each_photo->img }}" title="{{ $each_photo->title }}">
+                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                        </a>
+                        <img class="img-fluid center-block" alt=""
+                             src="/storage/strikeball_img_sm/{{ $each_photo->img }}">
+                    </div>
+                @endforeach
 
-                <div class="single-gallery-slide col-md-3 col-sm-4">
-                    <a href="photo/airsoft/12.jpg" title="Страйкбол">
-                        <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                    </a>
-                    <img class="img-responsive center-block" alt="страйкбол фото с игры"
-                         src="photo/airsoft/small/12.jpg">
-                </div>
             </div>
         </div>
     </div>
@@ -294,7 +251,8 @@
 
             <div class="col-sm-12">
                 <h2 class="text-center">В. Хоружей</h2>
-                <h4 class="text-center">Новая крытая CQB-площадка c двумя игровыми зонами для проведения игр в страйкбол и лазертаг в центре Минска<br> (здание завода "Минск Мебель", р-н Комаровки)</h4>
+                <h4 class="text-center">Новая крытая CQB-площадка c двумя игровыми зонами для проведения игр в страйкбол
+                    и лазертаг в центре Минска<br> (здание завода "Минск Мебель", р-н Комаровки)</h4>
 
 
                 <div class="popup-gallery images">
@@ -330,89 +288,98 @@
 
         <div class="row">
 
-            <div class="col-sm-6">
-                <h2 class="text-center">Заславский замок</h2>
-                <h4 class="text-center">Игровая площадка расположена вблизи трассы: Минск-Молодечно.<br>
-                    Замок в четыре этажа! Восемь трех этажных котеджей, длинные коридоры, нестандартные комнаты. </h4>
 
-                <div class="popup-gallery image">
-                    <div class="single-gallery-slide col-sm-12">
-                        <a href="photo/zamok/1.jpg" title="Площадка Заславский замок">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="Площадка Заславский замок"
-                             src="photo/zamok/1.jpg">
+            @foreach($playgrounds as $playground )
+                <div class="col-sm-6">
+
+
+                    <h2 class="text-center">{{$playground->title}}</h2>
+                    <h4 class="text-center">{{$playground->short_description}} </h4>
+
+                    <div class="popup-gallery image">
+                        <div class="single-gallery-slide col-sm-12">
+                            <a href="photo/zamok/1.jpg" title="Площадка Заславский замок">
+                                <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </a>
+                            @php($photo = $playground->albums->photos()->first())
+                            @if(!empty($photo))
+                                <img class="img-responsive center-block" alt="Площадка Заславский замок"
+                                     src="/storage/strikeball_img_sm/{{ $photo->img }}">
+                            @endif
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="text-center"><a href="/playground/{{ $playground->slug}}/{{$playground->id}}" class="btn btn-primary">подробнее</a>
                     </div>
                 </div>
-
-                <br>
-                <div class="text-center"><a href="zamok.php" class="btn btn-primary">подробнее</a></div>
-            </div>
-
-            <div class="col-sm-6">
-                <h2 class="text-center">комарово</h2>
-                <h4 class="text-center">Самая большая площадка с возведенными сооружениями, бункером и окопами. Отлично
-                    подходит для игры в страйкбол. Проводятся только прокатные игры.</h4>
+            @endforeach
+            {{-- <div class="col-sm-6">
+                 <h2 class="text-center">комарово</h2>
+                 <h4 class="text-center">Самая большая площадка с возведенными сооружениями, бункером и окопами. Отлично
+                     подходит для игры в страйкбол. Проводятся только прокатные игры.</h4>
 
 
-                <div class="popup-gallery image">
-                    <div class="single-gallery-slide col-sm-12">
-                        <a href="photo/komarovo/2/5.jpg" title="Площадка Комарово">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="Площадка Комарово"
-                             src="photo/komarovo/2/5.jpg">
-                    </div>
-                </div>
+                 <div class="popup-gallery image">
+                     <div class="single-gallery-slide col-sm-12">
+                         <a href="photo/komarovo/2/5.jpg" title="Площадка Комарово">
+                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                         </a>
+                         <img class="img-responsive center-block" alt="Площадка Комарово"
+                              src="photo/komarovo/2/5.jpg">
+                     </div>
+                 </div>
 
 
-                <br>
-                <div class="text-center"><a href="komarovo.php" class="btn btn-primary">подробнее</a></div>
-            </div>
-        </div>
+                 <br>
+                 <div class="text-center"><a href="komarovo.php" class="btn btn-primary">подробнее</a></div>
+             </div>
+         </div>
 
 
-        <div class="row">
-            <div class="col-sm-6">
-                <h2 class="text-center">Деревная</h2>
-                <h4 class="text-center">Самая крупная площадка на месте бывшей базы ПВО.
-                    Площадь более 4 га, естественный рельеф и искусственные сооружения. Подходит для проведение игр в
-                    страйкбол, лазертаг и арчеритаг. </h4>
+         <div class="row">
+             <div class="col-sm-6">
+                 <h2 class="text-center">Деревная</h2>
+                 <h4 class="text-center">Самая крупная площадка на месте бывшей базы ПВО.
+                     Площадь более 4 га, естественный рельеф и искусственные сооружения. Подходит для проведение игр в
+                     страйкбол, лазертаг и арчеритаг. </h4>
 
-                <div class="popup-gallery image">
-                    <div class="single-gallery-slide col-sm-12">
-                        <a href="photo/derevnaja/1.jpg" title="Площадка Деревня">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="Площадка Деревня"
-                             src="photo/derevnaja/small/1.jpg">
-                    </div>
-                </div>
-                <br>
-                <div class="text-center"><a href="derevnaja.php" class="btn btn-primary">подробнее</a></div>
-            </div>
+                 <div class="popup-gallery image">
+                     <div class="single-gallery-slide col-sm-12">
+                         <a href="photo/derevnaja/1.jpg" title="Площадка Деревня">
+                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                         </a>
+                         <img class="img-responsive center-block" alt="Площадка Деревня"
+                              src="photo/derevnaja/small/1.jpg">
+                     </div>
+                 </div>
+                 <br>
+                 <div class="text-center"><a href="derevnaja.php" class="btn btn-primary">подробнее</a></div>
+             </div>
 
-            <div class="col-sm-6">
-                <h2 class="text-center">Раков</h2>
-                <h4 class="text-center">Игровая площадка, расположенная в 30 км от Минска. Отлично подходит для игроков,
-                    которым надоели искусственные укрытия в виде щитов, бочек, шин или лесные массивы. </h4>
+             <div class="col-sm-6">
+                 <h2 class="text-center">Раков</h2>
+                 <h4 class="text-center">Игровая площадка, расположенная в 30 км от Минска. Отлично подходит для игроков,
+                     которым надоели искусственные укрытия в виде щитов, бочек, шин или лесные массивы. </h4>
 
 
-                <div class="popup-gallery image">
-                    <div class="single-gallery-slide col-sm-12">
-                        <a href="photo/rakov/1.jpg" title="Площадка Раков">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="Площадка Комарово"
-                             src="photo/rakov/1.jpg">
-                    </div>
-                </div>
-                <br>
-                <div class="text-center"><a href="rakov.php" class="btn btn-primary">подробнее</a></div>
-            </div>
+                 <div class="popup-gallery image">
+                     <div class="single-gallery-slide col-sm-12">
+                         <a href="photo/rakov/1.jpg" title="Площадка Раков">
+                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                         </a>
+                         <img class="img-responsive center-block" alt="Площадка Комарово"
+                              src="photo/rakov/1.jpg">
+                     </div>
+                 </div>
+                 <br>
+                 <div class="text-center"><a href="rakov.php" class="btn btn-primary">подробнее</a></div>
+             </div>--}}
+
         </div>
     </div>
 </section>
+
 
 <section id="prices">
     <div class="container">
@@ -494,7 +461,10 @@
 
         <div class="row">
 
-            <h4 class="text-center text-uppercase">СТОИМОСТЬ УЧАСТИЯ В СБОРНОЙ ИГРЕ В СТРАЙКБОЛ<span class="text-red"> - 25 РУБ/ЧЕЛ</span>, СО СВОИМ ОБОРУДОВАНИЕМ - <span class="text-red">10 руб/чел.</span><br> Игры проводятся каждый четверг и воскресенье, подробности о каждой игре читайте в <span class="text-red"><a href="https://vk.com/kalibrclub">группе в ВК</a></span></h4>
+            <h4 class="text-center text-uppercase">СТОИМОСТЬ УЧАСТИЯ В СБОРНОЙ ИГРЕ В СТРАЙКБОЛ<span class="text-red"> - 25 РУБ/ЧЕЛ</span>,
+                СО СВОИМ ОБОРУДОВАНИЕМ - <span class="text-red">10 руб/чел.</span><br> Игры проводятся каждый четверг и
+                воскресенье, подробности о каждой игре читайте в <span class="text-red"><a
+                            href="https://vk.com/kalibrclub">группе в ВК</a></span></h4>
 
 
             <div class="col-sm-2 sale-title">
@@ -549,7 +519,12 @@
 <section id="certificate" style="color: #fff;">
     <div class="container">
         <h1 class="text-center">Сертификат</h1>
-        <p>Сертификат на активный отдых – это лучший подарок коллегам и близким, ведь настоящие эмоции – это то, что запоминается на всю жизнь! Подарочный сертификат на страйкбол, лазертаг или лучный бой точно придется по душе каждому. Это универсальный подарок, который можно подарить как взрослым, так и детям, как мужчинам, так и женщинам. Если Вы не уверены, какая именно игра понравится, и не можете определиться – подарите денежный сертификат (на определенную сумму), это позволит обладателю сертификата самостоятельно выбрать подходящее развлечение. Воспользоваться сертификатом можно в течение полугода.
+        <p>Сертификат на активный отдых – это лучший подарок коллегам и близким, ведь настоящие эмоции – это то, что
+            запоминается на всю жизнь! Подарочный сертификат на страйкбол, лазертаг или лучный бой точно придется по
+            душе каждому. Это универсальный подарок, который можно подарить как взрослым, так и детям, как мужчинам, так
+            и женщинам. Если Вы не уверены, какая именно игра понравится, и не можете определиться – подарите денежный
+            сертификат (на определенную сумму), это позволит обладателю сертификата самостоятельно выбрать подходящее
+            развлечение. Воспользоваться сертификатом можно в течение полугода.
         </p>
         <hr>
         <div class="row">
@@ -608,7 +583,9 @@
         <ul>
             <li>* сертификат может быть выписан НА ЛЮБОЕ количество человек.</li>
             <li>** есть возможность приобрести сертификат также на 1, 3 и 4 часа игры в страйкбол.</li>
-            <li>*** в стоимость сертификата входит камуфляжная форма, защитная маска (при необходимости ее использования в игре), необходимое игровое оборудование.</li>
+            <li>*** в стоимость сертификата входит камуфляжная форма, защитная маска (при необходимости ее использования
+                в игре), необходимое игровое оборудование.
+            </li>
         </ul>
 
         <div class="text-center">
@@ -618,7 +595,9 @@
         <ul>
             <li>- Сертификат можно забрать самостоятельно либо заказать доставку в пределах МКАД (5 руб.)</li>
             <li>- Оплата только наличными.</li>
-            <li>- Воспользоваться сертификатом можно позвонив по указанным в сертификате номерам и выбрав подходящую             дату и время игры.</li>
+            <li>- Воспользоваться сертификатом можно позвонив по указанным в сертификате номерам и выбрав подходящую
+                дату и время игры.
+            </li>
             <li>- Сертификат действителен в течение полугода со дня приобретения.</li>
         </ul>
         <br>
@@ -649,88 +628,44 @@
             стенку", "Захват флага", "Круг" и другие.</p>
 
         <hr>
+
         <div class="row">
+
+
             <div class="col-md-6">
                 <div class="popup-gallery-2">
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/1.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/1.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/9.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/9.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/3.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/3.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/10.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/10.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/5.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/5.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/6.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/6.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/7.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/7.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/8.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/8.jpg">
-                    </div>
-                    <div class="single-gallery-slide col-md-4 col-sm-6">
-                        <a href="photo/archery_tag/11.jpg" title="Лучный бой (Archery Tag)">
-                            <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                        </a>
-                        <img class="img-responsive center-block" alt="фото с игры в лучный бой archery_tag минск"
-                             src="photo/archery_tag/small/11.jpg">
-                    </div>
+                    @foreach($album2->photos as $each_photo)
+                        <div class="single-gallery-slide col-md-4 col-sm-5">
+                            <a href="/storage/strikeball_img/{{ $each_photo->img }}" title="{{ $each_photo->title }}">
+                                <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            </a>
+                            <img class="img-fluid center-block" alt=""
+                                 src="/storage/strikeball_img_sm/{{ $each_photo->img }}">
+                        </div>
+
+                    @endforeach
 
                 </div>
-
             </div>
+
             <div class="col-md-6">
                 <iframe src="https://www.youtube.com/embed/tBjo-I1GPEg" frameborder="0"
                         allowfullscreen></iframe>
             </div>
+
+
         </div>
+
         <hr>
+
         <div>
             <div class="text-center"><a class="btn btn-primary red" href="/archery_tag">Подробнее</a>
             </div>
         </div>
 
+
     </div>
+
 </section>
 
 <section id="we_are_happy">

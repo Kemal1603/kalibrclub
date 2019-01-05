@@ -683,3 +683,8 @@ footer .phone {
     padding-bottom: 40px;
     color: #FFFFFF;
 }
+
+
+.custom-file, .custom-file-input{
+    width: 301px !important;
+}
