@@ -19,69 +19,6 @@ class PhotosTableSeeder extends Seeder
         \DB::table('photos')->insert(array (
             0 => 
             array (
-                'id' => 28,
-                'albums_id' => NULL,
-                'title' => '3',
-                'img' => 'uLVQSD4vV2XoEA2ZHWbO0DVM98etMWLU.jpg',
-                'created_at' => '2018-12-19 11:49:37',
-                'updated_at' => '2018-12-19 11:49:37',
-            ),
-            1 => 
-            array (
-                'id' => 29,
-                'albums_id' => NULL,
-                'title' => '4',
-                'img' => 'xpMGNLiiHDq0MhyOJ4emiQx2rZf9lU3R.jpg',
-                'created_at' => '2018-12-19 11:49:53',
-                'updated_at' => '2018-12-19 11:49:53',
-            ),
-            2 => 
-            array (
-                'id' => 30,
-                'albums_id' => NULL,
-                'title' => '5',
-                'img' => '2NqVK5BMtUeSMJP86ut3BSRZbpUdZ2Yt.jpg',
-                'created_at' => '2018-12-19 11:50:06',
-                'updated_at' => '2018-12-19 11:50:06',
-            ),
-            3 => 
-            array (
-                'id' => 31,
-                'albums_id' => NULL,
-                'title' => '6',
-                'img' => '7z5YfJYLPoT2W4o0Ag9lEm8wpoXuVpb3.jpg',
-                'created_at' => '2018-12-19 11:50:21',
-                'updated_at' => '2018-12-19 11:50:21',
-            ),
-            4 => 
-            array (
-                'id' => 32,
-                'albums_id' => NULL,
-                'title' => '7',
-                'img' => '8DSveXP1jq6YHncmIIqVIlRxMM5f76jO.jpg',
-                'created_at' => '2018-12-19 11:50:36',
-                'updated_at' => '2018-12-19 11:50:36',
-            ),
-            5 => 
-            array (
-                'id' => 33,
-                'albums_id' => NULL,
-                'title' => '9',
-                'img' => 'x44ReZZqGZp4G6LAR4wUbkmVhcIAl6SE.jpg',
-                'created_at' => '2018-12-19 11:51:05',
-                'updated_at' => '2018-12-19 11:51:05',
-            ),
-            6 => 
-            array (
-                'id' => 34,
-                'albums_id' => NULL,
-                'title' => '12',
-                'img' => '5ZwGG2IME4kewgI65CP0Sx08uLgKg9o0.jpg',
-                'created_at' => '2018-12-19 11:51:29',
-                'updated_at' => '2018-12-19 11:51:29',
-            ),
-            7 => 
-            array (
                 'id' => 41,
                 'albums_id' => 1,
                 'title' => '1',
@@ -89,7 +26,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:46:32',
                 'updated_at' => '2018-12-20 10:46:32',
             ),
-            8 => 
+            1 => 
             array (
                 'id' => 42,
                 'albums_id' => 1,
@@ -98,7 +35,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:46:55',
                 'updated_at' => '2018-12-20 10:46:55',
             ),
-            9 => 
+            2 => 
             array (
                 'id' => 43,
                 'albums_id' => 1,
@@ -107,7 +44,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:47:12',
                 'updated_at' => '2018-12-20 10:47:12',
             ),
-            10 => 
+            3 => 
             array (
                 'id' => 44,
                 'albums_id' => 1,
@@ -116,7 +53,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:47:28',
                 'updated_at' => '2018-12-20 10:47:28',
             ),
-            11 => 
+            4 => 
             array (
                 'id' => 45,
                 'albums_id' => 1,
@@ -125,7 +62,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:47:50',
                 'updated_at' => '2018-12-20 10:47:50',
             ),
-            12 => 
+            5 => 
             array (
                 'id' => 46,
                 'albums_id' => 1,
@@ -134,7 +71,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:48:01',
                 'updated_at' => '2018-12-20 10:48:01',
             ),
-            13 => 
+            6 => 
             array (
                 'id' => 47,
                 'albums_id' => 1,
@@ -143,7 +80,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:48:17',
                 'updated_at' => '2018-12-20 10:48:17',
             ),
-            14 => 
+            7 => 
             array (
                 'id' => 48,
                 'albums_id' => 1,
@@ -152,7 +89,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 10:48:30',
                 'updated_at' => '2018-12-20 10:48:30',
             ),
-            15 => 
+            8 => 
             array (
                 'id' => 49,
                 'albums_id' => 2,
@@ -161,7 +98,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:04:19',
                 'updated_at' => '2018-12-20 11:04:19',
             ),
-            16 => 
+            9 => 
             array (
                 'id' => 51,
                 'albums_id' => 2,
@@ -170,7 +107,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:04:41',
                 'updated_at' => '2018-12-20 11:04:41',
             ),
-            17 => 
+            10 => 
             array (
                 'id' => 52,
                 'albums_id' => 2,
@@ -179,7 +116,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:04:59',
                 'updated_at' => '2018-12-20 11:04:59',
             ),
-            18 => 
+            11 => 
             array (
                 'id' => 53,
                 'albums_id' => 2,
@@ -188,7 +125,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:05:22',
                 'updated_at' => '2018-12-20 11:05:22',
             ),
-            19 => 
+            12 => 
             array (
                 'id' => 54,
                 'albums_id' => 2,
@@ -197,7 +134,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:05:56',
                 'updated_at' => '2018-12-20 11:05:56',
             ),
-            20 => 
+            13 => 
             array (
                 'id' => 55,
                 'albums_id' => 2,
@@ -206,7 +143,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:06:39',
                 'updated_at' => '2018-12-20 11:06:39',
             ),
-            21 => 
+            14 => 
             array (
                 'id' => 56,
                 'albums_id' => 2,
@@ -215,7 +152,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:07:00',
                 'updated_at' => '2018-12-20 11:07:00',
             ),
-            22 => 
+            15 => 
             array (
                 'id' => 57,
                 'albums_id' => 2,
@@ -224,7 +161,7 @@ class PhotosTableSeeder extends Seeder
                 'created_at' => '2018-12-20 11:07:32',
                 'updated_at' => '2018-12-20 11:07:32',
             ),
-            23 => 
+            16 => 
             array (
                 'id' => 58,
                 'albums_id' => 2,
@@ -232,6 +169,51 @@ class PhotosTableSeeder extends Seeder
                 'img' => 'm9EwYdPCcIIGJxtAXcjHsKobAJQmryyK.jpg',
                 'created_at' => '2018-12-20 11:07:50',
                 'updated_at' => '2018-12-20 11:07:50',
+            ),
+            17 => 
+            array (
+                'id' => 66,
+                'albums_id' => 9,
+                'title' => 'aaaaaaaaaaaaa',
+                'img' => 'rzBhy7nHD1qsLDZMQoPc8TQGJLwL1FZM.jpg',
+                'created_at' => '2018-12-29 09:00:25',
+                'updated_at' => '2018-12-29 09:00:25',
+            ),
+            18 => 
+            array (
+                'id' => 67,
+                'albums_id' => 10,
+                'title' => 'suka yebanaya',
+                'img' => 'kcdyUv1a31HXXz6YmDj7MyF4jHOmUkOO.jpg',
+                'created_at' => '2018-12-29 09:00:43',
+                'updated_at' => '2018-12-29 09:00:43',
+            ),
+            19 => 
+            array (
+                'id' => 68,
+                'albums_id' => 11,
+                'title' => 'suka yebanaya',
+                'img' => 'iAKca8apIhE4Ofk2G2ZIXhthQOblBtQY.jpg',
+                'created_at' => '2018-12-29 09:01:12',
+                'updated_at' => '2018-12-29 09:01:12',
+            ),
+            20 => 
+            array (
+                'id' => 69,
+                'albums_id' => 8,
+                'title' => 'fgdfgdf',
+                'img' => 'DCUdO3uZMj0remxpRNsKD9EVB1RaCg1d.jpg',
+                'created_at' => '2019-01-04 16:31:20',
+                'updated_at' => '2019-01-04 16:31:20',
+            ),
+            21 => 
+            array (
+                'id' => 70,
+                'albums_id' => 8,
+                'title' => '4',
+                'img' => 'wFTZSjgLJxkvmE84Anq4MUMMuiFdGLB8.jpg',
+                'created_at' => '2019-01-05 16:41:15',
+                'updated_at' => '2019-01-05 16:41:15',
             ),
         ));
         

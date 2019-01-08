@@ -62,6 +62,8 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'admin' => CheckAdmin::class
+        /*Ранее мы создавали в терминале php artisan make:Middleware CheckAdmin, В этом файле мы
+        присваиваем значению слова admin этот самый класс CheckAdmin*/
     ];
 
     /**

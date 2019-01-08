@@ -228,6 +228,8 @@
 
 
             <div class="popup-gallery">
+
+
                 @foreach($album1->photos as $each_photo)
                     <div class="single-gallery-slide col-md-3 col-sm-4 ">
                         <a href="/storage/strikeball_img/{{ $each_photo->img }}" title="{{ $each_photo->title }}">
@@ -310,71 +312,12 @@
                     </div>
 
                     <br>
-                    <div class="text-center"><a href="/playground/{{ $playground->slug}}/{{$playground->id}}" class="btn btn-primary">подробнее</a>
+                    <div class="text-center"><a href="/playground/{{ $playground->slug}}/{{$playground->id}}"
+                                                class="btn btn-primary">подробнее</a>
                     </div>
                 </div>
             @endforeach
-            {{-- <div class="col-sm-6">
-                 <h2 class="text-center">комарово</h2>
-                 <h4 class="text-center">Самая большая площадка с возведенными сооружениями, бункером и окопами. Отлично
-                     подходит для игры в страйкбол. Проводятся только прокатные игры.</h4>
 
-
-                 <div class="popup-gallery image">
-                     <div class="single-gallery-slide col-sm-12">
-                         <a href="photo/komarovo/2/5.jpg" title="Площадка Комарово">
-                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                         </a>
-                         <img class="img-responsive center-block" alt="Площадка Комарово"
-                              src="photo/komarovo/2/5.jpg">
-                     </div>
-                 </div>
-
-
-                 <br>
-                 <div class="text-center"><a href="komarovo.php" class="btn btn-primary">подробнее</a></div>
-             </div>
-         </div>
-
-
-         <div class="row">
-             <div class="col-sm-6">
-                 <h2 class="text-center">Деревная</h2>
-                 <h4 class="text-center">Самая крупная площадка на месте бывшей базы ПВО.
-                     Площадь более 4 га, естественный рельеф и искусственные сооружения. Подходит для проведение игр в
-                     страйкбол, лазертаг и арчеритаг. </h4>
-
-                 <div class="popup-gallery image">
-                     <div class="single-gallery-slide col-sm-12">
-                         <a href="photo/derevnaja/1.jpg" title="Площадка Деревня">
-                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                         </a>
-                         <img class="img-responsive center-block" alt="Площадка Деревня"
-                              src="photo/derevnaja/small/1.jpg">
-                     </div>
-                 </div>
-                 <br>
-                 <div class="text-center"><a href="derevnaja.php" class="btn btn-primary">подробнее</a></div>
-             </div>
-
-             <div class="col-sm-6">
-                 <h2 class="text-center">Раков</h2>
-                 <h4 class="text-center">Игровая площадка, расположенная в 30 км от Минска. Отлично подходит для игроков,
-                     которым надоели искусственные укрытия в виде щитов, бочек, шин или лесные массивы. </h4>
-
-
-                 <div class="popup-gallery image">
-                     <div class="single-gallery-slide col-sm-12">
-                         <a href="photo/rakov/1.jpg" title="Площадка Раков">
-                             <div class="inner-box"><i class="fa fa-search" aria-hidden="true"></i></div>
-                         </a>
-                         <img class="img-responsive center-block" alt="Площадка Комарово"
-                              src="photo/rakov/1.jpg">
-                     </div>
-                 </div>
-                 <br>
-                 <div class="text-center"><a href="rakov.php" class="btn btn-primary">подробнее</a></div>
-             </div>--}}
 
         </div>
     </div>

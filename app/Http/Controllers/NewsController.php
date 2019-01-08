@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\News;
-use function GuzzleHttp\Promise\all;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Input;
 use Intervention\Image\Facades\Image;
@@ -49,7 +46,7 @@ class NewsController extends Controller
             Image::make($image)->fit(250, 250)->save($path);
 
             $path = storage_path('app/public/news_img/' . $filename);
-            Image::make($image)->fit(1920, 1920)->save($path);
+            Image::make($image)->fit(1000, 600)->save($path);
 
             $data += ['img' => basename($filename)];
 
@@ -98,7 +95,7 @@ class NewsController extends Controller
             Image::make($image)->fit(250, 250)->save($path);
 
             $path = storage_path('app/public/news_img/' . $filename);
-            Image::make($image)->fit(1920, 1920)->save($path);
+            Image::make($image)->fit(1000, 600)->save($path);
 
             $data += ['img' => basename($filename)];
 

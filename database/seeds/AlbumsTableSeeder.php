@@ -33,6 +33,46 @@ class AlbumsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            2 => 
+            array (
+                'id' => 7,
+                'album_name' => 'В.Хоружей',
+                'playground_id' => 13,
+                'created_at' => '2018-12-28 12:38:54',
+                'updated_at' => '2018-12-28 12:38:54',
+            ),
+            3 => 
+            array (
+                'id' => 8,
+                'album_name' => 'Заславский Замок',
+                'playground_id' => 14,
+                'created_at' => '2018-12-28 12:39:09',
+                'updated_at' => '2018-12-28 12:39:09',
+            ),
+            4 => 
+            array (
+                'id' => 9,
+                'album_name' => 'Комарово',
+                'playground_id' => 15,
+                'created_at' => '2018-12-28 12:39:20',
+                'updated_at' => '2018-12-28 12:39:20',
+            ),
+            5 => 
+            array (
+                'id' => 10,
+                'album_name' => 'Деревня',
+                'playground_id' => 16,
+                'created_at' => '2018-12-28 12:39:30',
+                'updated_at' => '2018-12-28 12:39:30',
+            ),
+            6 => 
+            array (
+                'id' => 11,
+                'album_name' => 'Раков',
+                'playground_id' => 17,
+                'created_at' => '2018-12-28 12:39:44',
+                'updated_at' => '2018-12-28 12:39:44',
+            ),
         ));
         
         

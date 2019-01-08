@@ -30,4 +30,6 @@ class Playgrounds extends Model
     {
         return $this->hasOne(Albums::class, 'playground_id');
     }
+
+    /*При помощи этого метода мы указываем, что данная модель PLaygrounds может содержать в себе одну модель Albums*/
 }

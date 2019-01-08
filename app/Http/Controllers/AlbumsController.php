@@ -30,7 +30,7 @@ class AlbumsController extends Controller
             Image::make($image)->fit(194, 129)->save($path);
 
             $path = storage_path('app/public/strikeball_img/' . $filename);
-            Image::make($image)->fit(1920, 1920)->save($path);
+            Image::make($image)->fit(1000, 600)->save($path);
 
             $data += ['img' => basename($filename)];
 

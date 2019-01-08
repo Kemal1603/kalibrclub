@@ -4,10 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Albums;
 use App\Photos;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\Input;
-use Intervention\Image\Facades\Image;
 
 class PhotosController extends Controller
 {
@@ -20,12 +17,17 @@ class PhotosController extends Controller
         Photos::create([
             'albums_id' => $each_album->id,
             'title' => request('title'),
-            'title' => request('title'),
             'img' => request('img')
         ]);
 
+        /*Здесь мы вызываем модель Photos и создаем в ней новые данные  в строку 'albums_id' => Заносим данные,
+        которые передали в $each_album->id, так же строке'title' присваеиваем значение переданное запросом
+         => request('title'), то же самое и для строки  'img' => request('img') */
+
 
         $each_album->photos();
+        /*Тут достаем  из переменной уже созданную модель photos с нашими новыми данными*/
+
 
         return redirect('/albums/'.$each_album->id.'/edit');
     }
